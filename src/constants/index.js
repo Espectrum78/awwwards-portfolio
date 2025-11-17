@@ -1,181 +1,192 @@
 // index.js
 export const servicesData = [
   {
-    title: "FullStack Development",
+    title: "Programación de videojuegos ",
     description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
+      "Transformo ideas en experiencias de juego inmersivas utilizando motores como Unity. Desde mecánicas de juego hasta integración de gráficos y sonido.",
     items: [
       {
-        title: "Backend Engineering",
+        title: "Desarrollo en Unity",
         description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
       },
       {
-        title: "Frontend Excellence",
+        title: "sistemas de juego",
         description: "(React, Vue, TypeScript, Interactive UI/UX)",
       },
       {
-        title: "Database Design",
+        title: "Integración de gráficos 3D",
         description: "(SQL/NoSQL Optimization, Scalable Structures)",
       },
     ],
   },
   {
-    title: "DevOps & Cloud Solutions",
+    title: "Planteamiento y desarrollo conceptual",
     description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
+      "Cada gran juego comienza con una idea sólida. Colaboro contigo para definir la visión, la narrativa y las mecánicas de juego que harán que tu proyecto destaque en el mercado competitivo de los videojuegos.",
     items: [
       {
-        title: "CI/CD Pipelines",
+        title: "Ideación de conceptos",
         description: "(GitHub Actions, Docker, Kubernetes)",
       },
       {
-        title: "Server Management ",
+        title: "Narrativa y diseño de niveles",
         description: "(Linux, Nginx, Load Balancing)",
       },
       {
-        title: "Performance Tuning",
+        title: "Planeamiento de mecánicas de juego",
         description: "(Caching, Compression, Lighthouse 90+ Scores)",
       },
     ],
   },
   {
-    title: "Security & Optimization",
+    title: "Guion y storyboard",
     description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
+      "Un buen guion y storyboard son esenciales para comunicar la visión de tu juego. Creo guiones atractivos y storyboards detallados que guían el desarrollo y aseguran una experiencia de juego coherente y envolvente.",
     items: [
       {
-        title: "Code Audits",
+        title: "Redacción de guiones",
         description: "(Refactoring, Tech Debt Cleanup)",
       },
       {
-        title: "Pen Testing",
+        title: "Creación de storyboards",
         description: "(Vulnerability Assessments)",
       },
       {
-        title: "SEO Tech Stack",
+        title: "Sincronización narrativa-juego",
         description: "(SSR, Metadata, Structured Data)",
       },
     ],
   },
   {
-    title: "Web & Mobile Apps",
+    title: "Concept art y diseño de escemarios",
     description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
+      "El alma visual de tu juego comienza con un arte conceptual impresionante. Diseño escenarios y personajes que capturan la esencia de tu visión, proporcionando una base sólida para el desarrollo artístico posterior.",
     items: [
       {
-        title: "Cross-Platform Apps",
+        title: "ilustraciones conceptuales",
         description: "(Single codebase for iOS/Android/Web)",
       },
       {
-        title: "PWAs",
+        title: "Estilos visuales",
         description: "(Offline mode, Push Notifications)",
       },
       {
-        title: "E-Commerce",
+        title: "Game environment design",
         description: "(Checkout flows, Payment Gateways, Inventory APIs)",
       },
     ],
   },
 ];
 export const projects = [
+  
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Alpina S.A - La copa Yox",
     description:
       "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
     href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    image: "/assets/projects/copa-yox-1.jpg",
+    bgImage: "/assets/projects/copa-yox-1.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "Tailwind CSS" },
+      { id: 0, name: "Videojuego" },
+      { id: 1, name: "Rol: Programador" },
+      { id: 2, name: "Unity" },
+      { id: 3, name: "Genders:" },
+      { id: 4, name: "Sports" },
+      { id: 5, name: "Multiplayer local" },
     ],
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Alpina S.A - Codigo Pom Pom",
     description:
       "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
     href: "",
-    image: "/assets/projects/plant-shop.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
+    image: "/assets/projects/Portada-Codigo-pom-pom.png",
+    bgImage: "/assets/projects/Portada-Codigo-pom-pom.png",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
-      { id: 4, name: "Tailwind CSS" },
+      { id: 0, name: "Videojuego" },
+      { id: 1, name: "Rol: Programador" },
+      { id: 2, name: "Unity" },
+      { id: 3, name: "Genders:" },
+      { id: 4, name: "RPG" },
+      { id: 5, name: "Turn base combat" },
     ],
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "Fenalco - Alborada",
     description:
       "An e-commerce platform for Apple products and accessories with deals and category filtering.",
     href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+    image: "/assets/projects/Portada-Alborada.png",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
+      { id: 0, name: "Videojuego" },
+      { id: 1, name: "Rol: Programador" },
+      { id: 2, name: "Unity" },
+      { id: 3, name: "Genders:" },
+      { id: 4, name: "Runner" },
+      { id: 5, name: "Plataformer" },
     ],
   },
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "Fenalco - Ruta Bogotá",
     description:
       "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
     href: "",
-    image: "/assets/projects/electronics-store.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
+    image: "/assets/projects/Portada-Mice.png",
+    bgImage: "assets\projects\Presentación La Copa Yox_page-0001.jpg",
     frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
+      { id: 0, name: "Videojuego" },
+      { id: 1, name: "Rol: Programador" },
+      { id: 2, name: "Unity" },
+      { id: 3, name: "Genders:" },
+      { id: 4, name: "Runner" },
+      { id: 5, name: "Plataformer" },
     ],
   },
   {
     id: 5,
-    name: "Home Decor Marketplace",
+    name: "SOFA - Año del dragón",
     description:
       "A curated collection of designer home decor items, including furniture and artisan vases.",
     href: "",
-    image: "/assets/projects/home-decor-store.jpg",
+    image: "/assets/projects/Banner-SOFA-2024.png",
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
+      { id: 0, name: "Animación" },
+      { id: 1, name: "Rol: Artista" },
+      { id: 2, name: "Tematica:" },
+      { id: 3, name: "Elementos" },
+      
     ],
   },
   {
     id: 6,
-    name: "Digital Game Store",
+    name: "SOFA - El viaje de Momo",
     description:
       "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
     href: "",
-    image: "/assets/projects/game-store.jpg",
+    image: "/assets/projects/Crunchyroll-SOFA-2025-invitados-anime-Bogota.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 0, name: "Animación" },
+      { id: 1, name: "Rol: Artista, Cleaner" },
+      { id: 2, name: "Tematica:" },
+      { id: 3, name: "Historia Conmovedora" },
+      
     ],
+    
   },
 ];
 export const socials = [
-  { name: "Instagram", href: "https://www.instagram.com/ali.sanatidev/reels/" },
+  { name: "Instagram", href: "https://www.instagram.com/toms_ag/" },
   {
-    name: "Youtube",
-    href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
+    name: "Behance",
+    href: "https://www.behance.net/TomasAG",
   },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-  { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/tom%C3%A1s-acu%C3%B1a-garz%C3%B3n/" },
+ 
 ];

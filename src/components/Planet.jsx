@@ -37,7 +37,7 @@ export function Planet(props) {
         x: 0.8,
         y: 0,
         z: 0,
-        duration: 10,
+        duration: 100,
         ease: "power1.inOut",
       },
       "<"
