@@ -124,6 +124,7 @@ export default function RingModel({ scale = 1, innerImage = "/images/inner.png" 
       ref={groupRef}
       scale={[1.4 * scale, 1.4 * scale, 1.4 * scale]}
       rotation={[Math.PI / 2, 0, 0]}
+      position={[1,1,9]}
       castShadow
       receiveShadow
     >
