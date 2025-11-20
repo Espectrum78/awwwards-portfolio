@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ------------------------------- */
-/*      DECLARACIÓN DE FUENTES     */
+/*      DECLARACIï¿½N DE FUENTES     */
 /* ------------------------------- */
 
 /* Amiamie Regular */
@@ -102,7 +102,7 @@
   --color-SageGray: #8b8b73;
   --color-gold: #cfa355;
 
-  /* Fallback fonts para arreglar la ñ y acentos */
+  /* Fallback fonts para arreglar la ï¿½ y acentos */
   --font-amiamie: "Amiamie", "Inter", "Arial", sans-serif;
   --font-amiamie-round: "Amiamie-Round", "Inter", "Arial", sans-serif;
 

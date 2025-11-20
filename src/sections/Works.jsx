@@ -10,9 +10,7 @@ const Works = () => {
   const previewRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(null);
-  const text = `Featured projects that have been meticulously
-    crafted with passion to drive
-    results and impact.`;
+  const text = `Proyectos diseñados para impactar y construir con propósito.`;
 
   const mouse = useRef({ x: 0, y: 0 });
   const moveX = useRef(null);

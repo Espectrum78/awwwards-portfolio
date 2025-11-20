@@ -36,7 +36,7 @@ Me caracterizo por una mentalidad positiva, apertura al aprendizaje constante y 
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Cod with purpose, Built to scale"}
+        subTitle={"Conoce más sobre mí"}
         title={"About"}
         text={text}
         textColor={"text-white"}

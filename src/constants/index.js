@@ -10,7 +10,7 @@ export const servicesData = [
         description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
       },
       {
-        title: "sistemas de juego",
+        title: "Sistemas de juego",
         description: "(React, Vue, TypeScript, Interactive UI/UX)",
       },
       {
