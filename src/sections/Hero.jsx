@@ -7,7 +7,8 @@ import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
 
-  const text = `Diseñador Digital y Desarrollador de videojuegos`;
+  const text = `Diseñador Digital y Desarrollador de videojuegos
+  especializado en programacion y concept art.`;
 
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">

@@ -7,8 +7,8 @@ import gsap from "gsap";
 const About = () => {
   const text = `Creo en el poder del diseño y la ilustración 
   para comunicar ideas y evocar emociones.`;
-  const aboutText = `Diseñador Digital e ilustrador, apasionado por la creatividad y la exploración de nuevas ideas visuales. 
-Me caracterizo por una mentalidad positiva, apertura al aprendizaje constante y facilidad para adaptarme a distintos retos. Disfruto del trabajo en equipo y busco aportar soluciones innovadoras que destaquen en cada proyecto.`;
+  const aboutText = `Diseñador digital enfocado en el desarrollo de Videojuegos, la programación, concept art, e ilustraciones. Me destaco por mi capacidad de adaptación, organización y habilidades en relaciones públicas.
+  Tengo un enfoque estratégico sobre explorar nuevas formas creativas que conecten con los usuarios y generen impacto a través de experiencias digitales.`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {

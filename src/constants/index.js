@@ -87,6 +87,7 @@ export const projects = [
     href: "",
     image: "/assets/projects/copa-yox-1.jpg",
     bgImage: "/assets/projects/copa-yox-1.jpg",
+    gif: "/gifs/proyecto1.gif", 
     frameworks: [
       { id: 0, name: "Videojuego" },
       { id: 1, name: "Rol: Programador" },
@@ -153,7 +154,7 @@ export const projects = [
     description:
       "A curated collection of designer home decor items, including furniture and artisan vases.",
     href: "",
-    image: "/assets/projects/Banner-SOFA-2024.png",
+    image: "/assets/projects/Viento.png",
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
       { id: 0, name: "Animación" },
@@ -169,7 +170,7 @@ export const projects = [
     description:
       "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
     href: "",
-    image: "/assets/projects/Crunchyroll-SOFA-2025-invitados-anime-Bogota.jpg",
+    image: " /assets/projects/momo.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 0, name: "Animación" },

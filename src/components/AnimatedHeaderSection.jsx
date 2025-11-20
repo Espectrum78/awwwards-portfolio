@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { AnimatedTextLines } from "../components/AnimatedTextLines";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+
 const AnimatedHeaderSection = ({
   subTitle,
   title,
@@ -12,8 +13,10 @@ const AnimatedHeaderSection = ({
 }) => {
   const contextRef = useRef(null);
   const headerRef = useRef(null);
+
   const shouldSplitTitle = title.includes(" ");
   const titleParts = shouldSplitTitle ? title.split(" ") : [title];
+
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: withScrollTrigger
@@ -22,25 +25,29 @@ const AnimatedHeaderSection = ({
           }
         : undefined,
     });
+
     tl.from(contextRef.current, {
       y: "50vh",
       duration: 1,
       ease: "circ.out",
     });
+
     tl.from(
       headerRef.current,
       {
         opacity: 0,
-        y: "200",
+        y: 200,
         duration: 1,
         ease: "circ.out",
       },
       "<+0.2"
     );
   }, []);
+
   return (
     <div ref={contextRef}>
-      <div style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)" }}>
+      {/* CONTENEDOR LIMPIO — SE QUITÓ clipPath */}
+      <div>
         <div
           ref={headerRef}
           className="flex flex-col justify-center gap-12 pt-16 sm:gap-16"
@@ -50,6 +57,7 @@ const AnimatedHeaderSection = ({
           >
             {subTitle}
           </p>
+
           <div className="px-10">
             <h1
               className={`flex flex-col gap-12 uppercase banner-text-responsive sm:gap-16 md:block ${textColor}`}
@@ -61,8 +69,12 @@ const AnimatedHeaderSection = ({
           </div>
         </div>
       </div>
+
+      {/* PARTE DEL TEXTO INFERIOR */}
       <div className={`relative px-10 ${textColor}`}>
-        <div className="absolute inset-x-0 border-t-2" />
+        {/* ESTA ERA LA LÍNEA — SI NO LA QUIERES, LA ELIMINÉ */}
+        {/* <div className="absolute inset-x-0 border-t-2" /> */}
+
         <div className="py-12 sm:py-16 text-end">
           <AnimatedTextLines
             text={text}
