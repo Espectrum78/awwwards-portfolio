@@ -5,6 +5,7 @@ import gsap from "gsap";
 
 const ContactSummary = () => {
   const containerRef = useRef(null);
+
   const items = [
     "Innovation",
     "Precision",
@@ -29,28 +30,32 @@ const ContactSummary = () => {
         scrub: 0.5,
         pin: true,
         pinSpacing: true,
-        markers: false,
       },
     });
   }, []);
+
   return (
     <section
       ref={containerRef}
       className="flex flex-col items-center justify-between min-h-screen gap-12 mt-16"
     >
-      <Marquee items={items} />
-      <div className="overflow-hidden font-light text-center contact-text-responsive">
-        <p>
-          “ Sigamos construyendo<br />
-          <span className="font-normal">Sonrisas"</span> {" "}
-          <span className="italic"></span> <br />
-         <span className="text-gold"></span> 
+      <Marquee items={items} className="text-[#1A1E26]" />
+
+      <div className="flex items-center justify-center py-10 text-[#1A1E26]">
+        <p className="font-light text-center leading-relaxed contact-text-responsive">
+          La vida es muy complicada <br />
+          como para no <span className="font-normal"></span>
+          <br />
+          <span className="text-gold font-normal text-x6 block mt-2">
+            sonreír
+          </span>
         </p>
       </div>
+
       <Marquee
         items={items2}
         reverse={true}
-        className="text-black bg-transparent border-y-2"
+        className="text-[#1A1E26] bg-transparent border-y-2"
         iconClassName="stroke-gold stroke-2 text-primary"
         icon="material-symbols-light:square"
       />

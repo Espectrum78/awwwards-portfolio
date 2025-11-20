@@ -16,7 +16,7 @@ const Hero = () => {
         subTitle={"Portafolio"}
         title={"Tomás Acuña Garzón"}
         text={text}
-        textColor={"text-black"}
+        textColor={"text-[#1A1E26]"}
       />
 
       <figure

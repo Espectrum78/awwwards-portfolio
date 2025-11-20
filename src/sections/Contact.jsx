@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col justify-between min-h-screen bg-black"
+      className="flex flex-col justify-between min-h-screen bg-[#1A1E26]"
     >
       <div>
         <AnimatedHeaderSection

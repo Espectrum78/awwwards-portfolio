@@ -10,7 +10,7 @@ const Works = () => {
   const previewRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(null);
-  const text = `Proyectos diseñados para impactar y construir con propósito.`;
+  const text = ``;
 
   const mouse = useRef({ x: 0, y: 0 });
   const moveX = useRef(null);
@@ -103,9 +103,10 @@ const Works = () => {
         subTitle={"Construcción con propósito, diseñado para impactar"}
         title={"Client Works"}
         text={text}
-        textColor={"text-black"}
+        textColor={"text-[#1A1E26]"}
         withScrollTrigger={true}
       />
+
       <div
         className="relative flex flex-col font-light"
         onMouseMove={handleMouseMove}
@@ -123,29 +124,32 @@ const Works = () => {
               ref={(el) => {
                 overlayRefs.current[index] = el;
               }}
-              className="absolute inset-0 hidden md:block duration-200 bg-black -z-10 clip-path"
+              className="absolute inset-0 hidden md:block duration-200 bg-[#1A1E26] -z-10 clip-path"
             />
 
             {/* title */}
-            <div className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white">
+            <div className="flex justify-between px-10 text-[#1A1E26] transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white">
               <h2 className="lg:text-[32px] text-[26px] leading-none">
                 {project.name}
               </h2>
               <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
             </div>
+
             {/* divider */}
-            <div className="w-full h-0.5 bg-black/80" />
-            {/* framework */}
+            <div className="w-full h-0.5 bg-[#1A1E26]/80" />
+
+            {/* frameworks */}
             <div className="flex px-10 text-xs leading-loose uppercase transtion-all duration-500 md:text-sm gap-x-5 md:group-hover:px-12">
               {project.frameworks.map((framework) => (
                 <p
                   key={framework.id}
-                  className="text-black transition-colors duration-500 md:group-hover:text-white"
+                  className="text-[#1A1E26] transition-colors duration-500 md:group-hover:text-white"
                 >
                   {framework.name}
                 </p>
               ))}
             </div>
+
             {/* mobile preview image */}
             <div className="relative flex items-center justify-center px-10 md:hidden h-[400px]">
               <img
@@ -161,10 +165,11 @@ const Works = () => {
             </div>
           </div>
         ))}
-        {/* desktop Flaoting preview image */}
+
+        {/* desktop floating preview */}
         <div
           ref={previewRef}
-          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-black pointer-events-none w-[960px] md:block hidden opacity-0"
+          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-[#1A1E26] pointer-events-none w-[960px] md:block hidden opacity-0"
         >
           {currentIndex !== null && (
             <img

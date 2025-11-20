@@ -34,7 +34,7 @@ const About = () => {
     });
   });
   return (
-    <section id="about" className="min-h-screen bg-black rounded-b-4xl">
+    <section id="about" className="min-h-screen bg-[#1A1E26] rounded-b-4xl">
       <AnimatedHeaderSection
         subTitle={"Conoce más sobre mí"}
         title={"About"}
