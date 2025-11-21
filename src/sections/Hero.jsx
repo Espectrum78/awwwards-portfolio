@@ -46,6 +46,7 @@ const Hero = () => {
 
           {/* Tu anillo 3D */}
           <RingModel scale={0.1} innerImage="/images/inner.png" />
+          position={[2, 0, 0]}   
 
           {/* Ambiente HDRI */}
           <Environment preset="sunset" background={false} />

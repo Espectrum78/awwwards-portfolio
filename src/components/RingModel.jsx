@@ -44,7 +44,12 @@ const InnerDistortionMaterial = shaderMaterial(
 );
 extend({ InnerDistortionMaterial });
 
-export default function RingModel({ scale = 1, innerImage = "/images/inner.png" }) {
+export default function RingModel({
+  scale = 1,
+  innerImage = "/images/inner.png",
+  position = [0, 0, 0]
+}) {
+
   const groupRef = useRef(null);
   const planeRef = useRef(null);
 
@@ -121,13 +126,14 @@ export default function RingModel({ scale = 1, innerImage = "/images/inner.png" 
 
   return (
     <group
-      ref={groupRef}
-      scale={[1.4 * scale, 1.4 * scale, 1.4 * scale]}
-      rotation={[Math.PI / 2, 0, 0]}
-      position={[1,1,9]}
-      castShadow
-      receiveShadow
-    >
+  ref={groupRef}
+  scale={[1.4 * scale, 1.4 * scale, 1.4 * scale]}
+  rotation={[Math.PI / 2, 0, 0]}
+  position={position}   // ★ posición dinámica
+  castShadow
+  receiveShadow
+>
+
       <primitive object={scene} castShadow receiveShadow />
 
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -3, 0]} receiveShadow>
