@@ -58,7 +58,7 @@ export const servicesData = [
     ],
   },
   {
-    title: "Concept art y diseño de ",
+    title: "Concept art y diseño de escenarios",
     description:
       "El alma visual de tu juego comienza con un arte conceptual impresionante. Diseño escenarios y personajes que capturan la esencia de tu visión, proporcionando una base sólida para el desarrollo artístico posterior.",
     items: [
