@@ -40,16 +40,19 @@ const ContactSummary = () => {
     >
       <Marquee items={items} className="text-[#1A1E26]" />
 
-      <div className="flex items-center justify-center py-10 text-[#1A1E26]">
-        <p className="font-light text-center leading-relaxed contact-text-responsive">
-          La vida es muy complicada <br />
-          como para no <span className="font-normal"></span>
-          <br />
-          <span className="text-gold font-normal text-x6 block mt-2">
-            sonreír
-          </span>
-        </p>
-      </div>
+ <div className="flex items-center justify-center py-20 text-[#1A1E26]">
+  <p className="font-light text-center leading-tight contact-text-responsive">
+    <span className="italic block text-4xl md:text-6xl">
+      La vida es muy complicada<br />como para no
+    </span>
+
+    <span className="text-gold font-normal italic block mt-6 text-6xl md:text-7xl">
+      sonreír
+    </span>
+  </p>
+</div>
+
+
 
       <Marquee
         items={items2}
